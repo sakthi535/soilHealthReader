@@ -1,12 +1,19 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 
-const Result = () => {
+const Result = ({route}) => {
   return (
-    <View>
-        <Text>
-            Result Area
-        </Text>
+    <View style = {{padding: 20}}>
+      <Text>
+        {route.name}
+      </Text>
+
+      <Image
+        style={{ width: 24, height: 24,}}
+        source={
+          require('./favicon.png')
+        }
+      />
     </View>
   )
 }

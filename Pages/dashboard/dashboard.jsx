@@ -7,15 +7,13 @@ const Dashboard = () => {
     <View style={[styles.container, { flexDirection: "column" }, { backgroundColor: "#FFFFFF" }, { textAlign: 'center' }]}>
       <View style={[{ flex: 1 }, { textAlign: "center" }]}>
         <Text style={styles.header}>
-          Soil Health Reader
+          Soil Health Reader 
         </Text>
       </View>
 
+      <View style={[{ flex: 5 }, { textAlign: 'center' }, { padding: 25 }]}>
 
-
-      <View style={[{ flex: 4 }, { textAlign: 'center' }, { padding: 25 }]}>
-
-        <Text style={{ padding: 20 }}>
+        <Text style={{ padding: 15 }}>
           <Image
             source={require('./dashboard.png')}
           />
@@ -67,12 +65,6 @@ const Dashboard = () => {
 
       </View>
 
-      <View style={styles.navbar}>
-        <Text style={[{ textAlign: 'center' }, { fontSize: 34 }, { fontWeight: "bold" }, { padding: 12 }]}>
-          Navbar
-        </Text>
-
-      </View>
     </View>
   )
 }
